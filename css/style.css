@@ -26,7 +26,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: "AvenirMd";
-background: #F7FBFD;
+line-height: 1.6;
 }
 /* Header section    ======================================================================================================= */
 .nav-pane{
@@ -75,13 +75,14 @@ margin: 50px 0;
 width: 60%;
 }
 /* About section    ======================================================================================================= */
-#about{
-
-}
 .about-wrap{
-background: #FDE8F4;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 0.5fr 0.8fr;
+grid-gap: 100px;
 border-radius: 50px;
+background: #FDE8F4
+}
+.about-wrap div:last-of-type{
+margin: 125px 90px 125px 0;
 }
 /* Utility classes ======================================================================================================= */
 section{
@@ -131,4 +132,11 @@ border: none;
 cursor: pointer;
 border-radius: 50px;
 font-family: "AvenirHeavy";
+}
+.section-headline{
+color: var(--style-two);
+margin-bottom: 40px;
+}
+.section-description{
+color: var(--style-one);
 }
