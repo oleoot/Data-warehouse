@@ -1,0 +1,56 @@
+@font-face {
+font-family: Helvetica;
+src: url('HelveticaBlack.ttf');
+}
+--root{
+--style-one: #4B5D68;
+--style-two: #212353;
+--style-three: #9C69E2;
+--style-four: #F063B8;
+--style-five: #68C9BA;
+}
+/* @font-face {
+font-family: "Avenir";
+src: url('AvenirLTStd-Book.otf');
+} */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Helvetica, sans-serif;
+}
+
+
+
+
+/* Utility classes ======================================================================================================= */
+.container{
+width: 70%;
+margin: 0 auto;
+}
+.flex-container{
+display: flex;
+justify-content: space-between;
+}
+.flex-container-center{
+display: flex;
+justify-content: center;
+}
+.grid-container{
+display: grid;
+}
+.text-xs{
+font-size: 16px;
+}
+.text-sm{
+font-size: 18px;
+}
+.text-md{
+font-size: 24px;
+}
+.text-lg{
+font-size: 40px;
+}
+.text-xl{
+font-size: 80px;
+}
