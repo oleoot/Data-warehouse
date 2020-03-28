@@ -28,9 +28,11 @@ box-sizing: border-box;
 font-family: "AvenirMd";
 line-height: 1.6;
 }
+a{
+text-decoration: none;
+}
 /* Header section    ======================================================================================================= */
 .nav-pane{
- align-items: center;
  padding: 50px 0 150px;
 }
 .nav-pane ul{
@@ -42,7 +44,6 @@ margin: 0 20px;
 }
 .nav a{
     color: var(--style-one);
-    text-decoration: none;
 }
 /* .nav a:hover{
 color: var(--style-two);
@@ -50,7 +51,6 @@ font-family: "AvenirHeavy";
 transition: 1s;
 } */
 #header-request{
-    align-items: center;
     padding: 15px 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -84,12 +84,62 @@ background: #FDE8F4
 .about-wrap div:last-of-type{
 margin: 125px 90px 125px 0;
 }
+/* features section    ======================================================================================================= */
+#features h2, .features-description {
+text-align: center;
+}
+.features-wrap{
+grid-template-columns: 1fr 1fr;
+grid-gap: 60px;
+margin-top: 70px;
+}
+.features-item{
+grid-template-columns: 1fr 1fr;
+grid-gap: 30px;
+padding: 40px 40px;
+height: 17.5vw;
+}
+.features-img{
+margin-left: -110px;
+}
+.features-item p:first-of-type{
+ color: var(--style-two);
+}
+.features-item p:last-of-type{
+ color: var(--style-one);
+ margin: 20px 0;
+}
+.features-more{
+justify-content: flex-start !important;
+}
+.features-more a{
+ color: var(--style-two);
+ font-family: "AvenirHeavy";
+ margin-right: 20px;
+}
+#item-1{
+background: url(../img/bg/bg-1.png);
+background-size: cover;
+background-position: center;
+}
+#item-2{
+background: url(../img/bg/bg-2.png);
+background-size: cover;
+}
+#item-3{
+background: url(../img/bg/bg-3.png);
+background-size: cover;
+}
+#item-4{
+background: url(../img/bg/bg-4.png);
+background-size: cover;
+}
 /* Utility classes ======================================================================================================= */
 section{
 padding-top: 150px;
 }
 .container{
-width: 70%;
+width: 1120px;
 margin: 0 auto;
 }
 .flex-container{
@@ -139,4 +189,7 @@ margin-bottom: 40px;
 }
 .section-description{
 color: var(--style-one);
+}
+.align-center{
+align-items: center;
 }
