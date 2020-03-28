@@ -2,28 +2,91 @@
 font-family: Helvetica;
 src: url('HelveticaBlack.ttf');
 }
---root{
+@font-face {
+font-family: "HelveticaHeavy";
+src: url('../font/HelveticaHeavy.ttf');
+}
+:root{
 --style-one: #4B5D68;
 --style-two: #212353;
 --style-three: #9C69E2;
 --style-four: #F063B8;
 --style-five: #68C9BA;
 }
-/* @font-face {
-font-family: "Avenir";
-src: url('AvenirLTStd-Book.otf');
-} */
+@font-face {
+font-family: "AvenirMd";
+src: url('../font/Avenir-Medium.ttf');
+}
+@font-face {
+font-family: "AvenirHeavy";
+src: url('../font/Avenir-Heavy.ttf');
+}
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: Helvetica, sans-serif;
+font-family: "AvenirMd";
+background: #F7FBFD;
 }
+/* Header section    ======================================================================================================= */
+.nav-pane{
+ align-items: center;
+ padding: 50px 0 150px;
+}
+.nav-pane ul{
+margin-left: 150px;
+list-style-type: none;
+}
+.nav-pane li{
+margin: 0 20px;
+}
+.nav a{
+    color: var(--style-one);
+    text-decoration: none;
+}
+/* .nav a:hover{
+color: var(--style-two);
+font-family: "AvenirHeavy";
+transition: 1s;
+} */
+#header-request{
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+background: #fff;
+}
+#header-request img{
+ margin-left: 20px;
+}
+#header-request p{
+ font-family: "AvenirHeavy";
+ color: var(--style-two);
+}
+.header-main {
+grid-template-columns: 1fr 1fr;
+}
+.header-main h1{
+ color: var(--style-two);
+}
+.header-main p{
+color: var(--style-one);
+margin: 50px 0;
+width: 60%;
+}
+/* About section    ======================================================================================================= */
+#about{
 
-
-
-
+}
+.about-wrap{
+background: #FDE8F4;
+grid-template-columns: 1fr 1fr;
+border-radius: 50px;
+}
 /* Utility classes ======================================================================================================= */
+section{
+padding-top: 150px;
+}
 .container{
 width: 70%;
 margin: 0 auto;
@@ -53,4 +116,19 @@ font-size: 40px;
 }
 .text-xl{
 font-size: 80px;
+}
+.main-img{
+  display: block;
+  width: 100%;
+}
+.btn{
+display: block;
+background: var(--style-three);
+color: #fff;
+padding: 16px 37px;
+outline: none;
+border: none;
+cursor: pointer;
+border-radius: 50px;
+font-family: "AvenirHeavy";
 }
