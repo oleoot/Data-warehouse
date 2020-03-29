@@ -191,6 +191,59 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 color: var(--style-two);
 align-items: center;
 }
+/* Footer section    ======================================================================================================= */
+#footer{
+padding: 150px 0 90px;
+}
+.footer-wrap{
+ grid-template-columns: 2fr 1fr 1fr 2fr;
+ margin-bottom: 90px;
+}
+.footer-logo{
+justify-content: flex-start !important;
+align-items: center;
+}
+.footer-logo p{
+margin-left: 20px;
+font-family: "AvenirHeavy";
+}
+.footer-wrap ul{
+list-style-type: none;
+}
+.footer-wrap li{
+font-size: 16px;
+color: var(--style-one);
+margin-bottom: 10px;
+}
+.footer-wrap li:first-of-type{
+color: var(--style-two);
+font-family: "AvenirHeavy";
+margin-bottom: 30px;
+line-height: 35px;
+}
+.footer-social{
+justify-content: flex-start !important;
+}
+.footer-social a{
+margin: 0 7.5px;
+}
+.footer-bottom {
+  align-items: center;
+}
+.footer-bottom p{
+font-size: 12px;
+color: var(--style-one);
+}
+.message-wrap{
+ width: 60px;
+ height: 60px;
+ align-items: center;
+ background: #EBE1F9;
+ border-radius: 50%;
+}
+.message-wrap a{
+align-items: center;
+}
 /* Utility classes ======================================================================================================= */
 section{
 padding-top: 150px;
