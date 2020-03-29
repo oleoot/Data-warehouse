@@ -170,6 +170,27 @@ margin: 0 5px;
 .right-img{
 margin: 0 10px;
 }
+/* Try section    ======================================================================================================= */
+.try-wrap{
+grid-template-columns: 1fr 1fr;
+}
+.try-btns{
+align-items: center;
+}
+.try-btns p{
+margin-right: 20px;
+}
+.try-btns button:first-of-type{
+margin-right: 30px;
+background: var(--style-four);
+}
+.try-btns button:last-of-type{
+display: flex;
+background: #fff;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+color: var(--style-two);
+align-items: center;
+}
 /* Utility classes ======================================================================================================= */
 section{
 padding-top: 150px;
